@@ -321,6 +321,20 @@ ALTER TABLE `zapas`
   ADD CONSTRAINT `fk_zapas_hoste_tym` FOREIGN KEY (`hostujici_tym`) REFERENCES `tym` (`id_tymu`) ON UPDATE CASCADE;
 COMMIT;
 
+CREATE INDEX idx_hrac_prijmeni ON hrac (prijmeni);
+
+CREATE INDEX idx_hrac_jmeno_prijmeni ON hrac (prijmeni, jmeno);
+
+CREATE INDEX idx_hrac_pozice ON hrac (pozice);
+
+CREATE INDEX idx_hrac_datum ON hrac (datum_narozeni);
+
+CREATE INDEX idx_zapas_cas ON zapas (cas_zapasu);
+
+CREATE INDEX idx_udalosti_typ ON udalosti (typ);
+
+CREATE INDEX idx_udalosti_minuta ON udalosti (minuta);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
