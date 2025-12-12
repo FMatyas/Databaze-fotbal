@@ -32,6 +32,7 @@ Níže je vizuální návrh databáze provedený v dbdiagram.io:
 
 - MySQL / MariaDB
 - dbdiagram.io (vizuální návrh)
+- https://dbdiagram.io/d/Fotbalovy-turnaj-690dca986735e11170b803f7
 - phpMyAdmin – export SQL
 
 ---
